@@ -1,0 +1,53 @@
+/* External CSS page */
+
+/* Adding custom fonts */
+@font-face {
+  font-family: Great Wishes;
+  src: url(../fonts/great_wishes-webfont.woff);
+}
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(../fonts/montserrat-bold-webfont.woff);
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #588157;
+  text-align: center;
+}
+
+nav {
+  padding: 20px 0px;
+}
+
+/* Class for styling the anchor tags in the navigation bar */
+.nav-link {
+  padding: 20px;
+  color: white;
+  font-family: Montserrat Bold;
+  font-size: 20px;
+  /* Length of the transition for when it's hovered */
+  transition-duration: 0.4s;
+}
+
+/* Descendant selector to style all list items that are in the nav-link class elements. */
+.nav-link li {
+  display: inline-block;
+}
+
+/* Styling for when an item in the navigation bar gets hovered */
+.nav-link:hover {
+  background-color: #6a9969;
+}
+
+/* ID for styling the restaurant name (MUGHALS & CO.) in the header */
+#restaurant-name {
+  display: inline;
+  margin: 20px;
+  font-family: Montserrat Bold;
+  font-size: 25px;
+  color: #dad7cd;
+}
