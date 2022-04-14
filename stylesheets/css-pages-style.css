@@ -13,6 +13,10 @@
   font-family: Roboto Slab;
   src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
 
 body {
   margin: 0px;
@@ -41,6 +45,7 @@ h1 {
 p {
   color: #344e41;
   font-size: 18px;
+  font-family: "Roboto";
   padding: 0px 70px;
 }
 
