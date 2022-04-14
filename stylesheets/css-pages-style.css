@@ -9,9 +9,16 @@
   font-family: Montserrat Bold;
   src: url(../fonts/montserrat-bold-webfont.woff);
 }
+@font-face {
+  font-family: Roboto Slab;
+  src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 
 body {
   margin: 0px;
+
+  background-color: #dad7cd;
+  color: #344e41;
 }
 
 header {
@@ -23,12 +30,28 @@ nav {
   padding: 20px 0px;
 }
 
+h1 {
+  color: #344e41;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+  margin-bottom: 5px;
+}
+
+hr {
+  border: 5px solid #588157;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+
 /* Class for styling the anchor tags in the navigation bar */
 .nav-link {
   padding: 20px;
   color: white;
-  font-family: Montserrat Bold;
-  font-size: 20px;
+  font-family: "Montserrat Bold";
+  font-size: 23px;
   /* Length of the transition for when it's hovered */
   transition-duration: 0.4s;
 }
@@ -47,7 +70,7 @@ nav {
 #restaurant-name {
   display: inline;
   margin: 20px;
-  font-family: Montserrat Bold;
+  font-family: "Montserrat Bold";
   font-size: 25px;
   color: #dad7cd;
 }
