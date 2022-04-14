@@ -18,7 +18,6 @@ body {
   margin: 0px;
 
   background-color: #dad7cd;
-  color: #344e41;
 }
 
 header {
@@ -39,10 +38,21 @@ h1 {
   margin-bottom: 5px;
 }
 
+p {
+  color: #344e41;
+  font-size: 18px;
+  padding: 0px 70px;
+}
+
+/* Styling for hr tag, rounded, green, solid line underneath every heading of a page */
 hr {
   border: 5px solid #588157;
+  /* Making the ends rounded */
   border-radius: 5px;
+
   width: 50%;
+
+  /* Centering the line */
   margin: auto;
 }
 
@@ -51,7 +61,7 @@ hr {
   padding: 20px;
   color: white;
   font-family: "Montserrat Bold";
-  font-size: 23px;
+  font-size: 20px;
   /* Length of the transition for when it's hovered */
   transition-duration: 0.4s;
 }
@@ -71,6 +81,21 @@ hr {
   display: inline;
   margin: 20px;
   font-family: "Montserrat Bold";
-  font-size: 25px;
+  font-size: 22px;
   color: #dad7cd;
+}
+
+/* ID for styling the text in the footer */
+#footer-text {
+  color: #3a5a40;
+  font-size: 16px;
+}
+
+/* ID for the line (hr tag) that divides the footer from the main content */
+#footer-hr {
+  border: 2px solid #588157;
+  /* Making the ends rounded */
+  border-radius: 5px;
+
+  width: 99%;
 }
