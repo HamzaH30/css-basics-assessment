@@ -43,8 +43,10 @@
         We would love to hear from you! Please complete the form below to get in
         touch with us. <br />
         <!-- Disclaimer to the user -->
-        Note: This is a school project, do not submit any personal or sensitive
-        information.
+        <span class="disclaimer-text">
+          NOTE: This is a school project, do not submit any personal or
+          sensitive information.
+        </span>
       </p>
 
       <!-- Using a div as a container to style the form. -->
@@ -56,7 +58,10 @@
             <legend>Your Contact Information</legend>
 
             <!-- This text input will ask the user for their first name. -->
-            <label for="first-name">First Name (ex: John) [required]: </label>
+            <label for="first-name"
+              >First Name (ex: John)
+              <span class="required-text">[required]</span>:
+            </label>
             <input
               type="text"
               name="first-name"
@@ -68,7 +73,10 @@
             <br />
 
             <!-- This text input will ask the user for their last name. -->
-            <label for="last-name">Last Name (ex: Doe) [required]: </label>
+            <label for="last-name"
+              >Last Name (ex: Doe)
+              <span class="required-text">[required]</span>:
+            </label>
             <input
               type="text"
               name="last-name"
@@ -81,7 +89,8 @@
 
             <!-- This email input will ask the user for their email so that I can contact them in case I need to. -->
             <label for="contact-email">
-              Your Email Address (ex: johndoe@gmail.com) [required]:
+              Your Email Address (ex: johndoe@gmail.com)
+              <span class="required-text">[required]</span>:
             </label>
             <input
               type="email"
@@ -114,7 +123,9 @@
           <fieldset form="contact-form" name="user-message">
             <legend>Your Message To Send</legend>
 
-            <label for="message">Your message [required]: </label>
+            <label for="message"
+              >Your message <span class="required-text">[required]</span>:
+            </label>
             <textarea name="message" id="message" rows="10" required></textarea>
 
             <br />
@@ -126,7 +137,7 @@
             -->
             <label for="message-importance">
               On a scale of 1 - 10, how urgent do you expect a reply?
-              [required]:
+              <span class="required-text">[required]</span>:
             </label>
             <p id="range-text">
               1
@@ -156,8 +167,10 @@
         <sup>&copy;</sup>2022, Mughals & Co. All rights reserved. Website made
         by Hamza Haque.
         <br />
-        NOTE: This is a school project. DO NOT submit any personally
-        identifiable information and/or sensitive information on this website.
+        <span class="disclaimer-text">
+          NOTE: This is a school project. DO NOT submit any personally
+          identifiable information and/or sensitive information on this website.
+        </span>
       </p>
     </footer>
   </body>

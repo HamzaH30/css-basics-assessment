@@ -52,8 +52,10 @@
           contact you with menu suggestions and pricing for your consideration.
           <br />
           <!-- Disclaimer to the user -->
-          Note: This is a school project, do not submit any personal or
-          sensitive information.
+          <span class="disclaimer-text">
+            Note: This is a school project, do not submit any personal or
+            sensitive information.
+          </span>
         </p>
       </article>
 
@@ -66,7 +68,12 @@
             <legend>Contact Information</legend>
 
             <!-- Input for user's first name -->
-            <label for="first-name">First Name (ex: John) [required]: </label>
+            <label for="first-name"
+              >First Name (ex: John)
+              <span class="required-text"
+                ><span class="required-text">[required]</span></span
+              >:
+            </label>
             <input
               type="text"
               name="first-name"
@@ -78,7 +85,10 @@
             <br />
 
             <!-- Input for user's last name -->
-            <label for="last-name">Last Name (ex: Doe) [required]: </label>
+            <label for="last-name"
+              >Last Name (ex: Doe)
+              <span class="required-text">[required]</span>:
+            </label>
             <input
               type="text"
               name="last-name"
@@ -104,7 +114,8 @@
 
             <!-- Input for user's email -->
             <label for="user-email">
-              Email (ex: johndoe@gmail.com) [required]:
+              Email (ex: johndoe@gmail.com)
+              <span class="required-text">[required]</span>:
             </label>
             <input
               type="email"
@@ -118,7 +129,8 @@
 
             <!-- Input for user's phone number -->
             <label for="phone-number">
-              Phone Number (ex: 1-234-567-8901) [required]:
+              Phone Number (ex: 1-234-567-8901)
+              <span class="required-text">[required]</span>:
             </label>
             <!-- According to "The International Public Telecommunication Numbering Plan" phone numbers cannot exceed 15 digits. https://en.wikipedia.org/wiki/E.164 -->
             <input
@@ -140,14 +152,18 @@
 
             <!-- Input for the date of the event -->
             <label for="event-date">
-              Date of Event (yyyy/mm/dd) [required]:
+              Date of Event (yyyy/mm/dd)
+              <span class="required-text">[required]</span>:
             </label>
             <input type="date" name="event-date" id="event-date" required />
 
             <br />
 
             <!-- Group of radio buttons asking for time frame of event, morning or evening. -->
-            <label for="time-frame">Requested Time Frame [required]: </label>
+            <label for="time-frame"
+              >Requested Time Frame
+              <span class="required-text">[required]</span>:
+            </label>
             <br />
 
             <!-- Morning (AM) radio button -->
@@ -163,7 +179,8 @@
 
             <!-- Text input for event location -->
             <label for="event-location">
-              Event Location (ex: 221B Baker Street) [required]:
+              Event Location (ex: 221B Baker Street)
+              <span class="required-text">[required]</span>:
             </label>
             <input
               type="text"
@@ -177,7 +194,8 @@
 
             <!-- Number input for number of people attending event. -->
             <label for="num-people">
-              Number of People (ex: 80) [required]:
+              Number of People (ex: 80)
+              <span class="required-text">[required]</span>:
             </label>
             <input
               type="number"
@@ -225,8 +243,10 @@
         <sup>&copy;</sup>2022, Mughals & Co. All rights reserved. Website made
         by Hamza Haque.
         <br />
-        NOTE: This is a school project. DO NOT submit any personally
-        identifiable information and/or sensitive information on this website.
+        <span class="disclaimer-text">
+          NOTE: This is a school project. DO NOT submit any personally
+          identifiable information and/or sensitive information on this website.
+        </span>
       </p>
     </footer>
   </body>

@@ -155,6 +155,16 @@ input[type="submit"]:hover {
   background-color: #6a9969;
 }
 
+/* Class to style the disclaimer text informing user not to submit any personal or sensitive information */
+.disclaimer-text {
+  color: red;
+  font-weight: bold;
+}
+
+.required-text {
+  color: red;
+}
+
 /* ID for styling the restaurant name (MUGHALS & CO.) in the header */
 #restaurant-name {
   display: inline;
