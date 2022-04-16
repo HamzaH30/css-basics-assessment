@@ -61,6 +61,73 @@ hr {
   margin: auto;
 }
 
+/* Styling div used for form */
+div {
+  margin: 0px 70px;
+  color: #344e41;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  /* Making it the full width of the form */
+  width: 100%;
+
+  font-size: 17px;
+
+  /* Adding padding within the input */
+  padding: 7px 20px;
+
+  /* Adding margin (spacing) to make it less condensed */
+  margin: 8px 0px;
+
+  /* Including padding into the total width of the element. If it's not added the input will be bigger than the width of the form */
+  box-sizing: border-box;
+
+  /* Changing size of border */
+  border: 1px solid;
+  /* Rounded corners */
+  border-radius: 5px;
+
+  background-color: #dad7cd;
+}
+
+input[type="radio"] {
+  /* Styling radio buttons to only take up as little width as possible - don't want to stretch the radio buttons */
+  width: min-content;
+}
+
+input[type="date"] {
+  /* Styling the date input to make it take as little width as possible, this makes it easier for the user to click the calendar icon and select a date */
+  width: min-content;
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+  background-color: #588157;
+  color: white;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: "Roboto";
+  font-size: 16px;
+
+  padding: 12px 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  /* Duration for transitions (i.e., change of colour when hovered) */
+  transition-duration: 0.4s;
+}
+
+/* Styling the submit button when hovered */
+input[type="submit"]:hover {
+  background-color: #3a5a40;
+}
+
 /* Class for styling the anchor tags in the navigation bar */
 .nav-link {
   padding: 20px;
