@@ -11,6 +11,7 @@
 
     <!-- Internal CSS -->
     <style>
+      /* Styling the text displaying the range values */
       #range-text {
         font-size: 16px;
         margin: 0px;
@@ -32,16 +33,21 @@
     </header>
 
     <main>
+      <!-- Heading for this page. -->
       <h1>CONTACT</h1>
+      <!-- hr tag styled to act as a line underneath the heading for visual appeal. -->
       <hr />
 
+      <!-- Brief description of page, informing user to fill out form. -->
       <p>
         We would love to hear from you! Please complete the form below to get in
         touch with us. <br />
+        <!-- Disclaimer to the user -->
         Note: This is a school project, do not submit any personal or sensitive
         information.
       </p>
 
+      <!-- Using a div as a container to style the form. -->
       <div>
         <!-- Form that will be asking the user for their contact information, and then they can send a message to me. -->
         <form name="user-contact" id="contact-form" method="get">
@@ -124,6 +130,7 @@
             </label>
             <p id="range-text">
               1
+              <!-- Using inline CSS to style the range input to have a width of 50%. -->
               <input
                 type="range"
                 name="message-importance"
@@ -142,14 +149,13 @@
       </div>
     </main>
 
-    <!-- TODO: Add Contact Information, and social media icons to footer. -->
+    <!-- A styled hr tag to separate and identify the footer. -->
     <hr id="footer-hr" />
     <footer>
       <p id="footer-text">
         <sup>&copy;</sup>2022, Mughals & Co. All rights reserved. Website made
         by Hamza Haque.
-      </p>
-      <p id="footer-text">
+        <br />
         NOTE: This is a school project. DO NOT submit any personally
         identifiable information and/or sensitive information on this website.
       </p>

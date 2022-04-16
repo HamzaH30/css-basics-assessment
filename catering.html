@@ -27,9 +27,12 @@
 
     <main>
       <article>
-        <!-- Main text on this page. -->
+        <!-- Heading for this page. -->
         <h1>CATERING</h1>
+        <!-- hr tag styled to act as a line underneath the heading for visual appeal. -->
         <hr />
+
+        <!-- Some paragraphs giving a brief overview of the catering service offered by Mughals & Co. -->
         <p>
           For the last 50 years, Mughals & Co. has been proud to make birthdays,
           weddings, dinner parties, family celebrations, and business meetings a
@@ -48,6 +51,7 @@
           Please fill out the form below for your event. We will promptly
           contact you with menu suggestions and pricing for your consideration.
           <br />
+          <!-- Disclaimer to the user -->
           Note: This is a school project, do not submit any personal or
           sensitive information.
         </p>
@@ -61,7 +65,7 @@
           <fieldset form="catering-info" id="contact-info">
             <legend>Contact Information</legend>
 
-            <!-- Input for first name -->
+            <!-- Input for user's first name -->
             <label for="first-name">First Name (ex: John) [required]: </label>
             <input
               type="text"
@@ -73,7 +77,7 @@
 
             <br />
 
-            <!-- Input for last name -->
+            <!-- Input for user's last name -->
             <label for="last-name">Last Name (ex: Doe) [required]: </label>
             <input
               type="text"
@@ -85,7 +89,7 @@
 
             <br />
 
-            <!-- Input for company/organization name -->
+            <!-- Input for company/organization name if this event is being booked by a user on behalf of a company, for a business event. -->
             <label for="company-name">
               Company/Organization (ex: Mughals & Co.):
             </label>
@@ -98,7 +102,7 @@
 
             <br />
 
-            <!-- Input for email -->
+            <!-- Input for user's email -->
             <label for="user-email">
               Email (ex: johndoe@gmail.com) [required]:
             </label>
@@ -112,7 +116,7 @@
 
             <br />
 
-            <!-- Input for phone number -->
+            <!-- Input for user's phone number -->
             <label for="phone-number">
               Phone Number (ex: 1-234-567-8901) [required]:
             </label>
@@ -145,23 +149,14 @@
             <!-- Group of radio buttons asking for time frame of event, morning or evening. -->
             <label for="time-frame">Requested Time Frame [required]: </label>
             <br />
+
             <!-- Morning (AM) radio button -->
-            <input
-              type="radio"
-              name="time-frame"
-              id="morning"
-              value="morning"
-              required
-            />
+            <input type="radio" name="time-frame" value="morning" required />
             <label for="morning">Morning (AM)</label>
             <br />
+
             <!-- Evening (PM) radio button -->
-            <input
-              type="radio"
-              name="time-frame"
-              id="evening"
-              value="evening"
-            />
+            <input type="radio" name="time-frame" value="evening" required />
             <label for="evening">Evening (PM)</label>
 
             <br />
@@ -181,8 +176,8 @@
             <br />
 
             <!-- Number input for number of people attending event. -->
-            <label for="num-people"
-              >Number of People (ex: 80) [required]:
+            <label for="num-people">
+              Number of People (ex: 80) [required]:
             </label>
             <input
               type="number"
@@ -223,14 +218,13 @@
       </div>
     </main>
 
-    <!-- TODO: Add Contact Information, and social media icons to footer. -->
+    <!-- A styled hr tag to separate and identify the footer. -->
     <hr id="footer-hr" />
     <footer>
       <p id="footer-text">
         <sup>&copy;</sup>2022, Mughals & Co. All rights reserved. Website made
         by Hamza Haque.
-      </p>
-      <p id="footer-text">
+        <br />
         NOTE: This is a school project. DO NOT submit any personally
         identifiable information and/or sensitive information on this website.
       </p>

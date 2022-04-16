@@ -2,37 +2,41 @@
 
 /* Adding custom fonts */
 @font-face {
-  font-family: Great Wishes;
+  font-family: "Great Wishes";
   src: url(../fonts/great_wishes-webfont.woff);
 }
 @font-face {
-  font-family: Montserrat Bold;
+  font-family: "Montserrat Bold";
   src: url(../fonts/montserrat-bold-webfont.woff);
 }
 @font-face {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+/* Default stylying for the body */
 body {
   margin: 0px;
 
   background-color: #dad7cd;
 }
 
+/* Default styling for the header */
 header {
   background-color: #588157;
   text-align: center;
 }
 
+/* Default styling for the navigation menu */
 nav {
   padding: 20px 0px;
 }
 
+/* Default styling for the h1 tag - mainly used at the top of the webpage (ex: About, Contact, Catering) */
 h1 {
   color: #344e41;
   text-align: center;
@@ -42,14 +46,16 @@ h1 {
   margin-bottom: 5px;
 }
 
+/* The default styling for a paragraph tag - main text on the website */
 p {
   color: #344e41;
   font-size: 18px;
   font-family: "Roboto";
+  /* This padding is to make sure the paragraph text not start from the edge of the window */
   padding: 0px 70px;
 }
 
-/* Styling for hr tag, rounded, green, solid line underneath every heading of a page */
+/* Styling for hr tag to be rounded, green, and a solid line underneath every heading of a page */
 hr {
   border: 5px solid #588157;
   /* Making the ends rounded */
@@ -61,13 +67,14 @@ hr {
   margin: auto;
 }
 
-/* Styling div used for form */
+/* Styling the div tag used as a container to style the form */
 div {
   margin: 0px 70px;
   color: #344e41;
   font-size: 18px;
 }
 
+/* Default styling the inputs and the textarea */
 input,
 textarea {
   /* Making it the full width of the form */
@@ -166,8 +173,5 @@ input[type="submit"]:hover {
 /* ID for the line (hr tag) that divides the footer from the main content */
 #footer-hr {
   border: 2px solid #588157;
-  /* Making the ends rounded */
-  border-radius: 5px;
-
   width: 99%;
 }
