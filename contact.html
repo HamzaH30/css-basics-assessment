@@ -8,6 +8,15 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      #range-text {
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -27,15 +36,17 @@
       <hr />
 
       <p>
-        We would love to hear from you! <br />
-        Please complete the form below to get in touch with us.
+        We would love to hear from you! Please complete the form below to get in
+        touch with us. <br />
+        Note: This is a school project, do not submit any personal or sensitive
+        information.
       </p>
 
       <div>
         <!-- Form that will be asking the user for their contact information, and then they can send a message to me. -->
-        <form name="user-contact-message" id="contact-message" method="get">
+        <form name="user-contact" id="contact-form" method="get">
           <!-- Fieldset asking for the user's contact information. -->
-          <fieldset form="contact-info" name="contact-message">
+          <fieldset form="contact-form" name="user-contact-info">
             <legend>Your Contact Information</legend>
 
             <!-- This text input will ask the user for their first name. -->
@@ -47,9 +58,101 @@
               autocomplete="on"
               required
             />
+
+            <br />
+
+            <!-- This text input will ask the user for their last name. -->
+            <label for="last-name">Last Name (ex: Doe) [required]: </label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              autocomplete="on"
+              required
+            />
+
+            <br />
+
+            <!-- This email input will ask the user for their email so that I can contact them in case I need to. -->
+            <label for="contact-email">
+              Your Email Address (ex: johndoe@gmail.com) [required]:
+            </label>
+            <input
+              type="email"
+              name="contact-email"
+              id="contact-email"
+              autocomplete="on"
+              required
+            />
+
+            <br />
+
+            <!-- This telephone input will ask the user for their telephone number. -->
+            <label for="phone-number">
+              Your Phone Number (ex: 1-234-567-890):
+            </label>
+            <!-- According to "The International Public Telecommunication Numbering Plan" phone numbers cannot exceed 15 digits. https://en.wikipedia.org/wiki/E.164 -->
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              minlength="7"
+              maxlength="15"
+              autocomplete="on"
+            />
           </fieldset>
+
+          <br />
+
+          <!-- This fieldset will ask the user for their message they want to send to me. -->
+          <fieldset form="contact-form" name="user-message">
+            <legend>Your Message To Send</legend>
+
+            <label for="message">Your message [required]: </label>
+            <textarea name="message" id="message" rows="10" required></textarea>
+
+            <br />
+
+            <!-- 
+              This range input will ask the user for how urgent they 
+              expect a reply. This can help me determine when I should
+              reply to the message. 
+            -->
+            <label for="message-importance">
+              On a scale of 1 - 10, how urgent do you expect a reply?
+              [required]:
+            </label>
+            <p id="range-text">
+              1
+              <input
+                type="range"
+                name="message-importance"
+                id="message-importance"
+                min="1"
+                max="10"
+                style="width: 50%"
+                required
+              />
+              10
+            </p>
+          </fieldset>
+
+          <input type="submit" value="SUBMIT" />
         </form>
       </div>
     </main>
+
+    <!-- TODO: Add Contact Information, and social media icons to footer. -->
+    <hr id="footer-hr" />
+    <footer>
+      <p id="footer-text">
+        <sup>&copy;</sup>2022, Mughals & Co. All rights reserved. Website made
+        by Hamza Haque.
+      </p>
+      <p id="footer-text">
+        NOTE: This is a school project. DO NOT put any personally identifiable
+        information and/or sensitive information on this website.
+      </p>
+    </footer>
   </body>
 </html>
