@@ -84,9 +84,9 @@ hr {
 /* ID for styling the restaurant name (MUGHALS & CO.) in the header */
 #restaurant-name {
   display: inline;
-  margin: 20px;
+  padding: 10px;
   font-family: "Montserrat Bold";
-  font-size: 22px;
+  font-size: 24px;
   color: #dad7cd;
 }
 
