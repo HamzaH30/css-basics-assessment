@@ -8,6 +8,37 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      div {
+        margin: 0px 70px;
+      }
+
+      /* Styling the submit button */
+      input[type="submit"] {
+        background-color: #588157;
+        color: white;
+
+        cursor: pointer;
+
+        border: none;
+        border-radius: 5px;
+
+        font-family: Roboto;
+        font-size: 16px;
+
+        padding: 12px 30px;
+
+        /* Duration for transitions (i.e., change of colour when hovered) */
+        transition-duration: 0.4s;
+      }
+
+      /* Styling the submit button when hovered */
+      input[type="submit"]:hover {
+        background-color: #3a5a40;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -51,123 +82,134 @@
         </p>
       </article>
 
-      <!-- TODO: Need to be able to center form. -->
-      <!-- This is a form that will be asking the user for information regarding their wish to book Mughals & Co. for a catering event. -->
-      <form name="user-catering-info" id="catering-info" method="get">
-        <!-- Fieldset asking for contact info. -->
-        <fieldset form="catering-info" id="contact-info">
-          <legend>Contact information</legend>
+      <!-- Using a div as a container to style the form. -->
+      <div>
+        <!-- TODO: Need to be able to center form. -->
+        <!-- This is a form that will be asking the user for information regarding their wish to book Mughals & Co. for a catering event. -->
+        <form name="user-catering-info" id="catering-info" method="get">
+          <!-- Fieldset asking for contact info. -->
+          <fieldset form="catering-info" id="contact-info">
+            <legend>Contact information</legend>
 
-          <!-- Input for first name -->
-          <label for="first-name">First Name (ex: John) [required]: </label>
-          <input type="text" name="first-name" id="frist-name" required />
-          <!-- TODO: Ask Mr. Hardman if name & id for input are supposed to be the same? -->
+            <!-- Input for first name -->
+            <label for="first-name">First Name (ex: John) [required]: </label>
+            <input type="text" name="first-name" id="frist-name" required />
 
-          <br />
+            <br />
 
-          <!-- Input for last name -->
-          <label for="last-name">Last Name (ex: Doe) [required]: </label>
-          <input type="text" name="last-name" id="last-name" required />
+            <!-- Input for last name -->
+            <label for="last-name">Last Name (ex: Doe) [required]: </label>
+            <input type="text" name="last-name" id="last-name" required />
 
-          <br />
+            <br />
 
-          <!-- Input for company/organization name -->
-          <label for="company-name">
-            Company/Organization (ex: Mughals & Co.):
-          </label>
-          <input type="text" name="company-name" id="company-name" />
+            <!-- Input for company/organization name -->
+            <label for="company-name">
+              Company/Organization (ex: Mughals & Co.):
+            </label>
+            <input type="text" name="company-name" id="company-name" />
 
-          <br />
+            <br />
 
-          <!-- Input for email -->
-          <label for="email">Email (ex: johndoe@gmail.com) [required]: </label>
-          <input type="email" name="email" id="email" required />
+            <!-- Input for email -->
+            <label for="email"
+              >Email (ex: johndoe@gmail.com) [required]:
+            </label>
+            <input type="email" name="email" id="email" required />
 
-          <br />
+            <br />
 
-          <!-- Input for phone number -->
-          <label for="phone-number">
-            Phone Number (ex: 1-234-567-8901) [required]:
-          </label>
-          <!-- According to The International Public Telecommunication Numbering Plan phone numbers cannot exceed 15 digits. https://en.wikipedia.org/wiki/E.164 -->
-          <input
-            type="tel"
-            name="phone-number"
-            id="phone-number"
-            minlength="7"
-            maxlength="15"
-            required
-          />
-        </fieldset>
-
-        <br />
-
-        <!-- Fieldset asking user for the details of their catering event. -->
-        <fieldset form="catering-info" id="event-details">
-          <legend>Event details</legend>
-
-          <!-- Input for the date of the event -->
-          <label for="event-date">
-            Date of Event (yyyy/mm/dd) [required]:
-          </label>
-          <input type="date" name="event-date" id="event-date" required />
+            <!-- Input for phone number -->
+            <label for="phone-number">
+              Phone Number (ex: 1-234-567-8901) [required]:
+            </label>
+            <!-- According to The International Public Telecommunication Numbering Plan phone numbers cannot exceed 15 digits. https://en.wikipedia.org/wiki/E.164 -->
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              minlength="7"
+              maxlength="15"
+              required
+            />
+          </fieldset>
 
           <br />
 
-          <!-- Group of radio buttons asking for time frame of event, morning or evening. -->
-          <label for="time-frame">Requested Time Frame [required]: </label>
-          <br />
-          <!-- Morning (AM) radio button -->
-          <input
-            type="radio"
-            name="time-frame"
-            id="morning"
-            value="morning"
-            required
-          />
-          <label for="morning">Morning (AM)</label>
-          <br />
-          <!-- Evening (PM) radio button -->
-          <input type="radio" name="time-frame" id="evening" value="evening" />
-          <label for="evening">Evening (PM)</label>
+          <!-- Fieldset asking user for the details of their catering event. -->
+          <fieldset form="catering-info" id="event-details">
+            <legend>Event details</legend>
 
-          <br />
+            <!-- Input for the date of the event -->
+            <label for="event-date">
+              Date of Event (yyyy/mm/dd) [required]:
+            </label>
+            <input type="date" name="event-date" id="event-date" required />
 
-          <!-- Text input for event location -->
-          <label for="event-location">
-            Event Location (ex: 221B Baker Street) [required]:
-          </label>
-          <input
-            type="text"
-            name="event-location"
-            id="event-location"
-            required
-          />
+            <br />
 
-          <br />
+            <!-- Group of radio buttons asking for time frame of event, morning or evening. -->
+            <label for="time-frame">Requested Time Frame [required]: </label>
+            <br />
+            <!-- Morning (AM) radio button -->
+            <input
+              type="radio"
+              name="time-frame"
+              id="morning"
+              value="morning"
+              required
+            />
+            <label for="morning">Morning (AM)</label>
+            <br />
+            <!-- Evening (PM) radio button -->
+            <input
+              type="radio"
+              name="time-frame"
+              id="evening"
+              value="evening"
+            />
+            <label for="evening">Evening (PM)</label>
 
-          <!-- Number input for number of people attending event. -->
-          <label for="num-people">Number of People (ex: 80) [required]: </label>
-          <input
-            type="number"
-            name="num-people"
-            id="num-people"
-            min="1"
-            required
-          />
+            <br />
 
-          <br />
+            <!-- Text input for event location -->
+            <label for="event-location">
+              Event Location (ex: 221B Baker Street) [required]:
+            </label>
+            <input
+              type="text"
+              name="event-location"
+              id="event-location"
+              required
+            />
 
-          <!-- Text input asking for what type of event is being held. -->
-          <label for="event-type">
-            Type of Event (ex: Wedding, Birthday, Business Function):
-          </label>
-          <input type="text" name="event-type" id="event-type" />
-        </fieldset>
+            <br />
 
-        <!-- Submit button -->
-        <input type="submit" />
-      </form>
+            <!-- Number input for number of people attending event. -->
+            <label for="num-people"
+              >Number of People (ex: 80) [required]:
+            </label>
+            <input
+              type="number"
+              name="num-people"
+              id="num-people"
+              min="1"
+              required
+            />
+
+            <br />
+
+            <!-- Text input asking for what type of event is being held. -->
+            <label for="event-type">
+              Type of Event (ex: Wedding, Birthday, Business Function):
+            </label>
+            <input type="text" name="event-type" id="event-type" />
+          </fieldset>
+
+          <!-- Submit button -->
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
