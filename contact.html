@@ -31,7 +31,25 @@
         Please complete the form below to get in touch with us.
       </p>
 
-      <form name="user-contact-info" id="contact-info" method="get"></form>
+      <div>
+        <!-- Form that will be asking the user for their contact information, and then they can send a message to me. -->
+        <form name="user-contact-message" id="contact-message" method="get">
+          <!-- Fieldset asking for the user's contact information. -->
+          <fieldset form="contact-info" name="contact-message">
+            <legend>Your Contact Information</legend>
+
+            <!-- This text input will ask the user for their first name. -->
+            <label for="first-name">First Name (ex: John) [required]: </label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="on"
+              required
+            />
+          </fieldset>
+        </form>
+      </div>
     </main>
   </body>
 </html>
