@@ -161,6 +161,7 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
+/* Class to style any of the "[required]" texts to red */
 .required-text {
   color: red;
 }
