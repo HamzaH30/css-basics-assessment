@@ -132,13 +132,13 @@ input[type="submit"] {
 
 /* Styling the submit button when hovered */
 input[type="submit"]:hover {
-  background-color: #3a5a40;
+  background-color: #2d422c;
 }
 
 /* Class for styling the anchor tags in the navigation bar */
 .nav-link {
   padding: 20px;
-  color: white;
+  color: #dad7cd;
   font-family: "Montserrat Bold";
   font-size: 20px;
   /* Length of the transition for when it's hovered */
@@ -177,7 +177,7 @@ input[type="submit"]:hover {
 
 /* ID for styling the text in the footer */
 #footer-text {
-  color: #3a5a40;
+  color: #2d422c;
   font-size: 16px;
 }
 
