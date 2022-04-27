@@ -38,7 +38,7 @@ nav {
 
 /* Default styling for the h1 tag - mainly used at the top of the webpage (ex: About, Contact, Catering) */
 h1 {
-  color: #344e41;
+  color: #2d422c;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -48,7 +48,7 @@ h1 {
 
 /* The default styling for a paragraph tag - main text on the website */
 p {
-  color: #344e41;
+  color: #2d422c;
   font-size: 18px;
   font-family: "Roboto";
   /* This padding is to make sure the paragraph text not start from the edge of the window */
@@ -70,7 +70,7 @@ hr {
 /* Styling the div tag used as a container to style the form */
 div {
   margin: 0px 70px;
-  color: #344e41;
+  color: #2d422c;
   font-size: 18px;
 }
 
